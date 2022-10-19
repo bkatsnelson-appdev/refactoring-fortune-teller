@@ -1,0 +1,9 @@
+<h1><%=@the_sign.capitalize%></h1>
+<p> <%=@horoscope%> <p>
+
+<p> Your lucky numbers for today are: </p>
+<ul>
+<% @rand_array.each do |num| %>
+  <li> <%= num %> </li>
+<% end %>
+</ul>
